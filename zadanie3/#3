@@ -1,0 +1,8 @@
+def C(a,b):
+    if a<b:
+        return a+b
+    if a>b and a>3:
+        return b**2 - b
+    if not (a<b) and not (a>b and a>3):
+        return b**2 - 1
+print(C(22,8)) 
