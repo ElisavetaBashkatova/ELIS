@@ -1,0 +1,16 @@
+#Даны два целых числа A и В, A>B. Выведите все нечётные числа от A до B включительно, в порядке убывания.
+a = int(input())
+b = int(input())
+u = []
+m = []
+if a>b:
+  for i in range (b,a+1):
+        u.append(i)
+    for x in u:
+        if x % 2 != 0:
+            m.append(x)
+    m.sort()
+    m.reverse()
+    print(m)
+if a<=b:
+    print('ошибка ввода: a<=b')
